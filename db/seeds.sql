@@ -19,4 +19,4 @@ INSERT INTO burgers (burger_name, devoured, date) VALUES ('swiss melt burger');
 
 -- Close out of the MySQL command line tool: exit.
 
-Getting error - ReferenceError: mysql is not defined
+Getting error when file is run in command line - ReferenceError: mysql is not defined

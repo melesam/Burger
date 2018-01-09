@@ -12,15 +12,12 @@ router.get("/", function(req, res) {
 			burger: data
 		};
 		console.log(hbs);
-		res.render("", hbs); 
+		res.render("index", hbs); //what goes here?
 	});
 });
 
 router.post("/api/burgers", function(req, res) {
-	burger.insertOne([
-		], [
-		req.body.##, req.body.##
-		], function(result) {
+	burger.insertOne(["burger_name"], [req.body.name], function(result) {
 			res.json({ id: result.insertId });
 		});
 });
@@ -32,8 +29,8 @@ router.put("/api/burgers/:id", function(req, res) {
 
 	burger.updateOne({
 		##: req.body.##
-	}, condition, function(result) {
-		if (result.changedRows == 0) {
+		}, condition, function(result) {
+		if (result.changedRows === 0) {
 			return res.status(404).end();
 		} 
 		else {
