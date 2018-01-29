@@ -23,7 +23,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
  
 // parse application/json
 app.use(bodyParser.json())
- 
+
+app.use(methodOverride("_method")); 
 
 require("./controllers/burger_controller.js")(app);
  

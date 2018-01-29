@@ -1,10 +1,10 @@
 
 
-INSERT INTO burgers (burger_name, devoured, date) VALUES ('bacon cheeseburger');
+INSERT INTO burgers (burger_name) VALUES ('bacon cheeseburger');
 
-INSERT INTO burgers (burger_name, devoured, date) VALUES ('turkey burger');
+INSERT INTO burgers (burger_name) VALUES ('turkey burger');
 
-INSERT INTO burgers (burger_name, devoured, date) VALUES ('swiss melt burger');
+INSERT INTO burgers (burger_name) VALUES ('swiss melt burger');
 
 
 
